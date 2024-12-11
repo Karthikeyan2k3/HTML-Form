@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta tags makes website is accessible,readable and responsive-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title tag specifies the title of the page dhown in browser-->
+        <title>Basic Form</title>
+    </head>
+    <!--body tag defines the main content of Html doc-->
+    <body>
+        <h1>Registration Form</h1>
+        <!--form tag is used to create form for user input-->
+        <form>
+            <!--label used for define form elements-->
+            <label>Name</label>
+            <!--input used to create various type of user input field in form(text,password,email,etc.)-->
+            <input type="text" id="name" placeholder="Enter Firstname & LastName"><br>
+            <label>E-Mail</label>
+            <input type="email" id="email" placeholder="xyz@domain.com"><br>
+            <label>Education</label>
+            <select id="edu" required><!--select is used to create dropdown menu-->
+                <option>10th</option>
+                <option>12th</option>
+                <option>UG</option>
+                <option>PG</option>
+            </select><br>
+            <label>For which Position Do You Applying?</label><br>
+            <input type="checkbox" id="male" name="gender" value="Male">
+            <label for="male">Developer</label>
+            <input type="checkbox" id="female" name="gender" value="Female">
+            <label for="female">QA</label><br>
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="+911234567890"><br>
+            <label>Address</label><br>
+            <textarea rows="5" cols="50"></textarea><br><!--textarea is used to create multiline input from users-->
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <label>Date of Birth</label>
+            <input type="date" id="dob"><br>
+            <label>Resume</label>
+            <input type="file" id="resume"><br>
+            <button type="submit" name="Submit">submit</button><!--button is used to create clickable buttons for forms-->
+        </form>
+    </body>
+
+</html>
